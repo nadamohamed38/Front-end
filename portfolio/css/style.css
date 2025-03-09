@@ -1,0 +1,353 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+ h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight:900;
+}
+
+h3 , h4 , h5 , h6 
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight:900;
+}
+
+main nav{
+    z-index: 20000;
+}
+main .layer{
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+main .layer .content{ 
+    margin-top: 300px;
+}
+main .layer .hello{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+main .layer h1::after{
+    content: ' |';
+    animation: typing 3s linear infinite alternate-reverse;
+    font-weight: bolder;
+}
+
+.about{
+    background: white;
+    padding: 50px;
+}
+
+.about .content .cont h6{
+    color: rgb(174, 174, 174);
+    font-weight: lighter;
+}
+.about .content .cont p{
+    color: rgb(174, 174, 174);
+
+}
+
+.about .btns .btn2:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
+}
+.about .btns .btn1{
+    color: white;
+}
+.about  .btns .btn1:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.about .progress{
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.242);
+}
+.serve{
+    background-color: rgb(239, 239, 239);
+
+}
+.serve .row{
+    padding-left: 100px;
+}
+.serve .icon{
+    width: fit-content;
+    padding: 20px;
+    font-size: x-large;
+    margin: auto;
+    background-color: rgb(238, 238, 238);
+    transition: .5s;
+}
+
+.serve .cont h2{
+    
+    z-index: 5;
+}
+.serve .dot{
+    top: 25;
+}
+.serve .dots{
+    background-image: url(imgs/dots.png);
+    background-repeat: repeat;
+    width: 12%;
+    height: 45%;
+    margin: auto;
+    z-index: 0;
+}
+.serve .row > div:hover .icon{
+    background-color: black;
+    color: white;
+}
+
+.portfolio .cont h2{
+    
+    z-index: 5;
+}
+.portfolio .dot{
+    top: 20;
+}
+.portfolio .dots{
+    background-image: url(imgs/dots.png);
+    background-repeat: repeat;
+    width: 15%;
+    height: 45%;
+    margin: auto;
+    z-index: 0;
+}
+
+
+.portfolio .layerr{
+    background-color: rgba(255, 255, 255, 0.915);
+    
+    margin: 7px 0 0 9px;
+    color: white;
+    z-index: -4;
+    visibility: hidden;
+}
+
+.portfolio .row .main:hover .layerr{
+    color: black;
+    width: 95%;
+    height: 95%;
+    top: 0;
+    z-index: 5;
+    padding-top: 100px;
+    visibility: inherit;
+    transition: 2s;
+}
+
+.portfolio .row .main:hover i{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.portfolio .row .main i:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px black solid;
+}
+.portfolio{
+    padding: 60px;
+}
+
+.client{
+    background-color: rgb(239, 239, 239);
+
+}
+.client .cont h2{
+    
+    z-index: 5;
+}
+.client .dot{
+    top: 20;
+}
+.client .dots{
+    background-image: url(imgs/dots.png);
+    background-repeat: repeat;
+    width: 20%;
+    height: 45%;
+    margin: auto;
+    z-index: 0;
+}
+
+.client .container{
+    padding: 30px 0 20px 20px;
+}
+
+.client img{
+    width: 7%;
+    margin: 10px auto;
+    
+}
+
+.team{
+    background-color: rgb(239, 239, 239);
+
+}
+
+.team .cont h2{
+    
+    z-index: 5;
+}
+.team .dot{
+    top: 20;
+}
+.team .dots{
+    background-image: url(imgs/dots.png);
+    background-repeat: repeat;
+    width: 15%;
+    height: 45%;
+    margin: auto;
+    z-index: 0;
+}
+.team .row{
+    margin-left: 50px;
+}
+.team .info{
+    background-color: rgb(99, 98, 98);
+    z-index: 2;
+}
+.team .photo img{
+    width: 100%;
+    transition: .5s;
+}
+
+.team .photo:hover img{
+   
+    transform: scale(1.2);
+}
+.team .layerr{
+    background-color: rgba(255, 255, 255, 0.915);
+    transition: 1s;
+    margin: 8px 0 0 9px;
+    color: white;
+    z-index: -4;
+    visibility: hidden;
+}
+
+.team .row > div:hover .layerr{
+    color: black;
+    width: 95%;
+    height: 95%;
+    top: 0;
+    transform: rotateY(360deg);
+    z-index: 5;
+    padding-top: 150px;
+    visibility: inherit;
+}
+
+.team .row > div:hover i{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.team .row > div i:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px black solid;
+}
+
+.contact .cont h2{
+    
+    z-index: 5;
+}
+.contact .dot{
+    top: 20;
+}
+.contact .dots{
+    background-image: url(imgs/dots.png);
+    background-repeat: repeat;
+    width: 15%;
+    height: 45%;
+    margin: auto;
+    z-index: 0;
+}
+
+.contact .info i{
+    background-color: rgb(239, 239, 239);
+
+}
+.contact .info:hover i{
+    background-color: black;
+    color: white;
+}
+
+.contact .copy h6{
+    color: #748182;
+}
+
+.contact button{
+    color: white;
+    background-color: black;
+}
+
+.contact button:hover{
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+}
+.contact .no-border{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+.contact .no-border:focus{
+    box-shadow: none;
+}
+@keyframes typing{
+    0%{
+        content: 'L|';
+    }
+    8%{
+        content: 'La|';
+    }
+    16%{
+        content: 'Lar|';
+    }
+    24%{
+        content: 'Larr|';
+    }
+    32%{
+        content: 'Larry|';
+    }
+    40%{
+        content: 'Larry |';
+    }
+    48%{
+        content: 'Larry D|';
+    }
+    56%{
+        content: 'Larry Da|';
+    }
+    64%{
+        content: 'Larry Dan|';
+    }
+    72%{
+        content: 'Larry Dani|';
+    }
+    80%{
+        content: 'Larry Danie|';
+    }
+    88%{
+        content: 'Larry Daniel|';
+    }
+    100%{
+        content: 'Larry Daniels|';
+    }
+}
+
+@media screen  and (max-width : 1400px){
+
+    .about .content .photo .dots{
+        top: 240px;
+    }
+
+   
+}
+
+@media screen  and (max-width : 900px){
+
+    .serve .dots{
+        width: 20%;
+    }
+}
