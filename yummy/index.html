@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="bg-black">
+
+
+        <div class="loading justify-content-center align-items-center">
+            <i class="fas fa-spinner fa-spin text-white fa-5x"></i>
+        </div>
+
+        <div class="nav d-flex position-fixed h-100 w-25">
+          <div class="sidenav d-flex flex-column justify-content-between w-75 h-100">
+            <div class="bg-black h-100">
+                <a href="#home"  class="srch text-decoration-none text-white d-block p-4">Search</a>
+                <a href="#details" class="categ text-decoration-none text-white d-block p-4">Categories</a>
+                <a href="#duration" class="ar text-decoration-none text-white d-block p-4">Area</a>
+                <a href="#contact" class="ing text-decoration-none text-white d-block p-4">Ingredients</a>
+                <a href="#contact" class="cont text-decoration-none text-white d-block p-4">Contact US</a>
+            </div>
+            <div class="text-white p-2 bg-black">
+                <div>
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </div>
+                <div><h6>Copyright Â© 2019 All Rights
+                    Reserved.</h6></div>
+            </div>
+          </div>
+          
+            <div class="d-flex flex-column justify-content-between  bg-white h-100">
+                <div><img src="img/il_794xN.252426348.webp" class="rounded-pill mt-3 ms-1" style="width: 65px;" alt=""></div>
+                <div class="open fs-3 p-4"><i class="navFa fa fa-bars" aria-hidden="true"></i></div>
+                <div class="d-flex flex-column fs-5 p-4"><i class="fa fa-globe" aria-hidden="true"></i>
+                     <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="content">
+            <div class="mainPage">
+                <div class="container py-md-5">
+                    <div class="row" id="row">
+                       
+                    </div>
+                </div>
+        </div>
+            <div class="search">
+                <div class="container  py-4">
+                    <div class="row g-3 p-2">
+                        <div class="col-lg-6">
+                            <input type="text" id="name" oninput="srchbyName()" placeholder="Search by name" class="bg-black w-100 rounded-2 p-2 text-white">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" id="letter" placeholder="Search by letter" oninput="srchbyLetter()" class="bg-black w-100 rounded-2 p-2 text-white">
+                        </div>
+                    </div>
+                    <div class="row g-3" id="row"></div>
+                </div>
+
+            </div>
+
+            <div class="categories">
+                <div class="container py-md-5">
+                    <div class="row g-md-4" id="row">
+                       
+                    </div>
+                </div>
+           </div>
+
+           <div class="mealsOfcat">
+            <div class="container py-md-5">
+                <div class="row g-md-4" id="row">
+                   
+                </div>
+            </div>
+          </div>
+
+           <div class="area">
+            <div class="container py-md-5">
+                <div class="row g-md-4" id="row">
+                   
+                </div>
+            </div>
+          </div>
+
+          <div class="mealsOfArea">
+            <div class="container py-md-5">
+                <div class="row g-md-4" id="row">
+                   
+                </div>
+            </div>
+          </div>
+
+           <div class="ingredients">
+            <div class="container py-md-5">
+                <div class="row g-md-4" id="row">
+                   
+                </div>
+            </div>
+       </div>
+
+       <div class="mainMeals">
+        <div class="container py-md-5">
+            <div class="row g-md-4" id="row">
+               
+            </div>
+        </div>
+   </div>
+
+      <div class="mealing">
+        <div class="container py-md-5">
+            <div class="row g-md-4" id="row">
+               
+            </div>
+        </div>
+      </div>
+        <div class="contact">
+            <div class="container p-5">
+                <div class="row g-3">
+                    <div class="col-md-6 pb-2">
+                        <input  type="text" oninput="contactUs(1)" placeholder="Enter your name" class="namee bg-white w-100 rounded-2 p-2 ">
+                        <div class="namealert alert alert-danger mt-2 text-center">Special characters and numbers not allowed</div>
+                    </div>
+                    <div class="col-md-6 pb-2">
+                        <input type="text" oninput="contactUs(2)" placeholder="Enter your email" class="email bg-white w-100 rounded-2 p-2 ">
+                        <div class="emailalert alert alert-danger mt-2 text-center">Email not valid *exemple@yyy.zzz</div>
+                    </div>
+                    <div class="col-md-6 pb-2">
+                        <input type="text" oninput="contactUs(3)" placeholder="Enter your phone" class="phone bg-white w-100 rounded-2 p-2 ">
+                        <div class="phonealert alert alert-danger mt-2 text-center">Enter valid Phone Number</div>
+                    </div>
+                    <div class="col-md-6 pb-2">
+                        <input type="text" oninput="contactUs(4)" placeholder="Enter your age" class="age bg-white w-100 rounded-2 p-2 ">
+                        <div class="agealert alert alert-danger mt-2 text-center">Enter valid age</div>
+                    </div>
+                    <div class="col-md-6 pb-2">
+                        <input type="password" oninput="contactUs(5)" placeholder="Enter your password" class="pass bg-white w-100 rounded-2 p-2 ">
+                        <div class="passalert alert alert-danger mt-2 text-center">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+                    </div>
+                    <div class="col-md-6 pb-2">
+                        <input type="password" oninput="contactUs(6)" placeholder="Repassward" class="repass bg-white w-100 rounded-2 p-2 ">
+                        <div class="repassalert alert alert-danger mt-2 text-center">Enter valid repassword</div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center pt-3">
+                    <button id="btn" class="btn btn-outline-danger disabled">submit</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

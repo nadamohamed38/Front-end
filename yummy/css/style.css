@@ -1,0 +1,63 @@
+body{
+    overflow: hidden;
+}
+
+.loading{
+    position: fixed;
+    inset: 0;
+    z-index: 999999999999;
+    display: flex;
+}
+
+.nav{
+    z-index: 98888;
+}
+
+
+.navFa{
+    cursor: pointer;
+}
+
+.col-md-3 .layer{
+    background: rgba(255, 255, 255, 0.766);
+    color: black;
+    transition:  .5s;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+.col-md-3:hover .layer{
+    top: 0;
+    
+}
+
+.search{
+    display: none;
+}
+
+.emailalert ,.namealert,.agealert,.phonealert,.passalert,.repassalert {
+    display: none;
+}
+
+.contact{
+    display: none;
+}
+
+.ingredients{
+    display: none;
+}
+
+.mainMeals{
+    display: none;
+}
+
+.mealing{
+    display: none;
+}
+
+.area{
+    display: none;
+}
+
+
