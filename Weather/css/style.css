@@ -1,0 +1,44 @@
+
+.navbar .icon{
+    font-size: 70;
+}
+
+.navbar .text{
+    font-size: 10;
+}
+
+.find{
+    background-image: url(../img/nasa-nasa-gifs.gif);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.find .row .temp{
+    font-size: 100;
+}
+
+.find .row .cond{
+    color: rgb(0, 74, 202);
+}
+sup {
+    vertical-align: super;
+    font-size: x-small;
+}
+
+.find .row span{
+    color: rgba(255, 255, 255, 0.633);
+}
+
+.find .row span i{
+    color: rgb(52, 51, 51);
+}
+
+.find .row .icon{
+    font-size: 90;
+}
+
+.find .row .mintemp{
+    color: rgb(174, 173, 173);
+}
