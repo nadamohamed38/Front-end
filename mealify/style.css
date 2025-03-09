@@ -1,0 +1,715 @@
+:root{
+    --main_color: rgb(175, 45, 45);
+    --secondary_color: rgb(0, 0, 0);
+    --div_color: rgb(225, 222, 222) ;
+    --main_font:'Amatic SC', sans-serif;
+    --general_padding: 60px;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.home{
+    background-color: var(--div_color);
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-top:150px;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 20px;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 8;
+}
+
+.nav .navtit span{
+
+    color: var(--main_color);
+
+}
+.nav i{
+    font-size: xx-large;
+    margin-top: 30px;
+}
+   
+
+.nav li{
+    margin-top: 20px;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: large;
+   
+}
+.nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.616);
+    transition: 1s;
+}
+.nav a:hover{
+    color: black;
+}
+.home img{
+    width: 90%;
+}
+
+.home .image{
+    box-sizing: border-box;
+    padding-left: 90px;
+}
+
+.home .image:hover{
+    animation-name: vibration;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+}
+
+.home .Hcontent{
+    padding-top: 60px;
+}
+
+.Hcontent .main{
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+    font-size: 400%;
+    font-weight: 570;
+}
+
+.Hcontent .second{
+    color: rgba(0, 0, 0, 0.588);
+}
+
+.Hcontent .book{
+    border-radius: 0px 20px 20px 15px;
+    width: 120px;
+    height: 40px;
+    background-color: var(--main_color);
+    color: white;
+    margin-right: 50px;
+    border: none;
+    position: relative;
+    bottom: 10px;
+}
+
+.Hcontent .video{
+    width: 200px;
+    height: 60px;
+    border-radius: 40px 0 0 40px ;
+    font-size: large;
+    text-align: center;
+    border: none;
+    background-color:var(--div_color);
+    overflow: hidden;
+}
+
+.video .half{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: var(--main_color);
+    left: -40px;
+}
+
+.video span{
+    position: relative;
+    bottom: 35px;
+    padding-left: 60px;
+}
+.video .icon{
+    position: absolute;
+    left: 270px;
+    bottom: 102px;
+    background-color: white;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.video i{
+    font-size: 100%;
+    color: black;
+    margin-left: 10px;
+    padding: 10px 15px 10px 5px;
+}
+
+.video:hover i{
+    color: var(--main_color);
+}
+.video:hover span{
+    color: var(--main_color);
+}
+.chef{
+    text-align: center;
+    padding: 90px 60px 90px;
+}
+.chef .tit{
+    padding-bottom: 30px;
+}
+
+.tit .chefs{
+    color: rgba(0, 0, 0, 0.477);
+}
+
+.tit .title{
+    font-family: var(--main_font);
+    font-size: 350%;
+}
+
+.title span{
+    color: var(--main_color);
+}
+.chef .cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.chef .info{
+    box-sizing: border-box;
+    position: relative;
+    padding: 30px;
+    margin-bottom: 90px;
+    transition: .5s;
+}
+
+.chef .content{
+    background-image: url(images/team-shape.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 30px;
+    height: 100px;
+    width: 86.7%;
+}
+.chefinfo{
+    padding: 50px 30px 0px 40px;
+}
+.chef img{
+    width: 100%;
+    border-radius: 15px;
+  
+}
+
+.info h4{
+    font-weight: bolder;
+    font-size: larger;
+}
+.info span , p{
+    color: rgba(0, 0, 0, 0.471);
+}
+
+.info p {
+    font-size: 100%;
+}
+
+.top{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.top .sm{
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.43);
+    color: rgba(0, 0, 0, 0.37);
+    height: 120px;
+    transition: .5s ;
+    transition-delay:.5s ;
+    position: absolute;
+    left: 390px;
+    border-radius: 5px;
+}
+
+.top i{
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-size: x-large;
+}
+
+.info:hover{
+    transform: scale(1.1);
+
+}
+
+.info:hover .sm{
+   left: 330px;
+}
+
+.gallary{
+    background-color: var(--div_color);
+    text-align: center;
+    padding-top: 60px;
+}
+.gallary .cont{
+    display: flex;
+    padding: 40px 60px;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0);
+}
+ .gallary img{
+    width: 100%;
+
+ }
+.cont .g1 .pizza{
+    width: 100%;
+    overflow: hidden;
+    border: 10px 10px white;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cont .g1 .pizza .layer{
+    background-color: rgba(0, 0, 0, 0.547);
+    position: absolute;
+    transition: .5s;
+    top: 330px;
+    width: 91%;
+    height: 87%;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.pizza .layer h4{
+    padding-top: 90px;
+    font-size: x-large;
+}
+.pizza .layer .comm{
+    padding-top: 80px;
+   
+}
+
+
+.cont .g1 .pizza:hover .layer{
+    top: 20px;
+    color: white;
+}
+
+.cont .g1 .pizza:hover .comm{
+    color: rgba(255, 255, 255, 0.504);
+}
+
+.cont .g1 .levpizza{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    border: 10px 10px white;
+    position: relative;
+}
+
+.cont .g1 .levpizza .layer{
+    background-color: rgba(0, 0, 0, 0.547);
+    position: absolute;
+    transition: .5s;
+    top: 660px;
+    width: 91%;
+    height: 94%;
+}
+.levpizza .layer h4{
+    padding-top: 190px;
+    font-size: x-large;
+}
+.levpizza .layer .comm{
+    padding-top: 180px;
+   
+}
+.cont .g1 .levpizza:hover .layer{
+    top: 19px;
+    color: white;
+}
+
+.cont .g1 .levpizza:hover .comm{
+    color: rgba(255, 255, 255, 0.504);
+}
+
+.cont .g2 .steak{
+    width: 100%;
+    overflow: hidden;
+    border: 10px 10px white;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cont .g2 .steak .layer{
+    background-color: rgba(0, 0, 0, 0.547);
+    position: absolute;
+    transition: .5s;
+    top: 730px;
+    width: 91%;
+    height: 94.5%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.steak h4{
+    padding-top: 200px;
+    font-size: x-large;
+}
+.steak .layer .comm{
+    padding-top: 190px;
+   padding-right: 60px ;
+}
+
+.cont .g2 .steak:hover .comm{
+    color: rgba(255, 255, 255, 0.504);
+}
+.cont .g2 .steak:hover .layer{
+    top: 20px;
+    color: white;
+}
+
+.cont .g2 .frittata{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    border: 10px 10px white;
+    position: relative;
+}
+
+.cont .g2 .frittata .layer{
+    background-color: rgba(0, 0, 0, 0.547);
+    position: absolute;
+    transition: .5s;
+    top: 460px;
+    width: 91%;
+    height: 91%;
+}
+.frittata h4{
+    padding-top: 100px;
+    font-size: x-large;
+}
+.frittata .layer .comm{
+    padding-top: 90px;
+   
+}
+
+.cont .g2 .frittata:hover .comm{
+    color: rgba(255, 255, 255, 0.504);
+}
+
+.cont .g2 .frittata:hover .layer{
+    top: 20px;
+    color: white;
+}
+
+
+
+.cont .g3 .burger{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cont .g3 .burger .layer{
+    background-color: rgba(0, 0, 0, 0.547);
+    position: absolute;
+    transition: .5s;
+    top: 400px;
+    width: 91%;
+    height: 87%;
+}
+.burger h4{
+    padding-top: 90px;
+    font-size: x-large;
+}
+.burger .layer .comm{
+    padding-top: 80px;
+   
+}
+
+.cont .g3 .burger:hover .comm{
+    color: rgba(255, 255, 255, 0.504);
+}
+.cont .g3 .burger:hover .layer{
+    top: 20px;
+    color: white;
+}
+
+
+.cont .g3 .fried{
+    
+    width: 100%;
+    overflow: hidden;
+    border: 10px 10px white;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cont .g3 .fried .layer{
+    background-color: rgba(0, 0, 0, 0.547);
+    position: absolute;
+    transition: .5s;
+    top: 500px;
+    width: 91%;
+    height: 87.5%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.fried h4{
+    padding-top: 70px;
+    font-size: x-large;
+}
+.fried .layer .comm{
+    padding-top: 60px;
+   
+}
+
+.cont .g3 .fried:hover .comm{
+    color: rgba(255, 255, 255, 0.504);
+}
+.cont .g3 .fried:hover .layer{
+    top: 20px;
+    color: white;
+}
+
+.cont .g3 .kebab{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    border: 10px 10px white;
+    position: relative;
+}
+
+.cont .g3 .kebab .layer{
+    background-color: rgba(0, 0, 0, 0.547);
+    position: absolute;
+    transition: .5s;
+    top: 660px;
+    width: 91%;
+    height: 91%;
+}
+
+.kebab h4{
+    padding-top: 100px;
+    font-size: x-large;
+}
+.kebab .layer .comm{
+    padding-top: 90px;
+    padding-right: 60px;
+   
+}
+
+.cont .g3 .kebab:hover .comm{
+    color: rgba(255, 255, 255, 0.504);
+}
+.cont .g3 .kebab:hover .layer{
+    top: 20px;
+    color: white;
+}
+
+.contact{
+    padding: 70px;
+    background-color: rgb(240, 238, 238);
+}
+
+.contact .tit{
+    text-align: center;
+    padding: 30px;
+}
+
+.contact .map{
+    padding: 30px;
+}
+.contact .contactinfo{
+    margin: 30px;
+}
+.contact .contactinfo i{
+    font-size: xx-large;
+    color: var(--main_color);
+}
+.contact .contactinfo p{
+    margin-left: 70px;
+    margin-top: -40px;
+    font-size: smaller;
+    color: black;
+}
+.contact .contactinfo span{ 
+    font-size: x-large;
+    color: rgba(0, 0, 0, 0.414);
+}
+.contact .contactinfo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.contact .contactinfo  .day{
+    font-size: smaller;
+    color: black;
+    font-weight: bolder;
+}
+.contact .contactinfo tr{
+    margin-left: 40px;
+}
+.contact .contactinfo td{
+    padding: 40px;
+    width: 600px;
+    background-color: var(--div_color);
+}
+
+.contact .input{
+    width: 1125px;
+    margin-left: 30px;
+   margin-top: 30px;
+   background-color: white;
+   box-shadow: 10px 10px rgba(0, 0, 0, 0.262);
+   padding: 20px 0 20px 150px;
+ }
+
+ .contact .first{
+     width: 500px;
+     height: 50px;
+     margin-top: 20px;
+     margin-right: 40px;
+     margin-bottom: 40px;
+ }
+ 
+ .contact .second{
+     width: 1045px;
+     height: 50px;
+     margin-bottom: 40px;
+ }
+ 
+ .contact .third{
+     margin-bottom: 40px;
+ }
+ 
+ .contact .send{
+    color: white;
+    background-color: var(--main_color) ;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px 20px;
+    margin-left: 400px;
+    border: none;
+}
+
+.conc{
+    background-image: url(images/textured-metal-background.jpg);
+    color: white;
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+}
+.conc .social{
+    width: 23%;
+    margin-left: 40px;
+}
+.social p{
+    color: white;
+}
+.conc .social h3 img{
+    width: 5%;
+}
+
+.conc .social .main{
+    font-size: x-large;
+    padding-left: 15px;
+    padding-top: -20px;
+}
+.conc .social .main::after{
+    content: ".";
+    color: var(--main_color);
+    font-size: xx-large;
+}
+
+.social .soc{
+    padding-left: 50px;
+}
+
+.social .line{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.456);
+    height: 1px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.conc .social i{
+    color: white;
+    padding-left: 20px;
+    font-size: x-large;
+    
+}
+
+.conc .subscribe{
+    width: 40%;
+    
+}
+
+.subscribe p{
+    color: white;
+}
+
+.subscribe input{
+    width: 350px;
+    height: 40px;
+}
+.subscribe button{
+    color: white;
+    background-color: var(--main_color);
+    height: 40px;
+    width: 100px;
+}
+.subscribe .lists{
+    display: flex;
+}
+
+.lists .first{
+   margin-left: -20px;
+   padding-right: 40px;
+}
+.subscribe ul{
+    padding-right: 20px;
+    font-size: larger;
+}
+.subscribe li{
+
+    padding: 7px 30px 7px 10px;
+    margin-bottom: 13px;
+}
+
+.subscribe li:hover{
+    background-color: rgba(81, 81, 81, 0.344);
+    transform: translateX(5px);
+}
+
+.conc .intouch{
+    width: 23%;
+    margin-left: 40px;
+}
+.intouch i{
+    color: var(--main_color);
+    font-size: x-large;
+    padding-right: 20px;
+}
+ .intouch a{
+    text-decoration: none;
+    color: white;
+ }
+
+
+ @keyframes vibration {
+    0%{
+        transform: translatex(10px);
+    }
+    50%{
+        transform: translatex(-10px);
+        transform: translatey(10px);
+    }
+    100%{
+       
+        transform: translatey(-10px);
+    }
+
+ }
