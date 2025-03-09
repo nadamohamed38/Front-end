@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="bg-black text-white">
+        <div class="container py-5">
+            <h1 class="text-center m-2">CRUDS SYSTEM</h1>
+            <label for="prodname" class="mb-2">Product Name</label>
+            <input type="text" id="prodname" placeholder="EX:samsung" class="form-control mb-2">
+
+            <label for="prodprice" class="mb-2">Product Price</label>
+            <input type="text" id="prodprice" placeholder="EX.9000" class="form-control mb-2">
+
+            <label for="prodcategory" class="mb-2">Product Category</label>
+            <input type="text" id="prodcategory" placeholder="EX.Mobile" class="form-control mb-2">
+
+            <label for="proddesc" class="mb-2">Product Describtion</label>
+            <textarea name="" id="proddesc" cols="30" rows="1" placeholder="EX.Good" class="form-control mb-2"></textarea>
+
+            <button onclick="addProduct()" id="addbtn" class="btn btn-outline-light mb-5 mt-3">Add Product</button> 
+
+            <input oninput="searchProduct()" id="srch" type="text" class="form-control w-50 m-auto mb-5 p-1" placeholder="Search">
+
+            <table class="table text-center mt-2">
+                <thead>
+                    <th>index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Describtion</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
